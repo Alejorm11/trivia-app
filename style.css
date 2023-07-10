@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #ffd700;
+}
+
+#trivia-container {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#trivia-options {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+#trivia-options div {
+  margin-bottom: 10px;
+}
+
+#trivia-questions {
+  display: none;
+}
+
+#question-container {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.choices-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.choice input[type="radio"] {
+  margin-right: 5px;
+}
+
+.choice label {
+  font-weight: normal;
+}
+
+#submit {
+  display: block;
+  margin-top: 10px;
+  background-color: #ffd700;
+  color: #111;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #c0a000;
+}
+
+#score {
+  font-weight: bold;
+  margin-top: 20px;
+  display: none;
+}
+
+#generate-new {
+  display: none;
+}
+

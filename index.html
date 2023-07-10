@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivia app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Trivia app</h1>
+  
+  <div id="trivia-container">
+    <div id="trivia-options">
+      <h2>Configuración de Trivia</h2>
+      <div>
+        <label for="category">Categoría:</label>
+        <select id="category">
+          <option value="21">Deportes</option>
+          <option value="23">Historia</option>
+          <option value="25">Arte</option>
+        </select>
+      </div>
+      <div>
+        <label for="difficulty">Dificultad:</label>
+        <select id="difficulty">
+          <option value="easy">Fácil</option>
+          <option value="medium">Medio</option>
+          <option value="hard">Difícil</option>
+        </select>
+      </div>
+      <div>
+        <label for="type">Tipo de respuesta:</label>
+        <select id="type">
+          <option value="multiple">Múltiple</option>
+          <option value="boolean">Verdadero/Falso</option>
+        </select>
+      </div>
+      <button id="generate">Generar Trivia</button>
+    </div>
+    
+    <div id="trivia-questions" style="display: none;">
+      <h2>Preguntas</h2>
+      <div id="question-container"></div>
+      <div id="choices-container"></div>
+      <button id="submit">Responder</button>
+      <div id="score" style="display: none;"></div>
+      <button id="generate-new" style="display: none;">Generar nueva trivia</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
